@@ -3,6 +3,8 @@ const { ethers } = require("hardhat");
 
 describe("Blog", async ()=>{
     it("Should create a post", async ()=>{
+        const [owner] = await ethers.getSigners();
+        console.log(owner.address)
         const Blog = await ethers.getContractFactory("Blog");
         const blog = await Blog.deploy("Blog Contract");
         await blog.deployed();

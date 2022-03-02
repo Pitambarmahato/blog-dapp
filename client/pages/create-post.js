@@ -84,7 +84,7 @@ function CreatePost(){
         <div className={container}>
             {
                 image && (
-                    <img className={coverImageStyle} src={URL.crateObjectURL(image)} />
+                    <img className={coverImageStyle} src={URL.createObjectURL(image)} />
                 )
             }
             <input onChange={onChange} name='title' placeholder='Give it a title' value={post.title} className={titleStyle} />

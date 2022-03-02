@@ -48,7 +48,7 @@ export default function Home(props) {
               Create Your First Post
             </button>
           )
-        }
+        }t
       </div>
     </div>
   )
